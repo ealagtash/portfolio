@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background-color: #f5f5f5;
+  background-color: rgb(20, 20, 20);
   color: #4e4e4e;
 }
 
@@ -169,7 +169,7 @@ a:hover {
 .title-box-2 {
   margin-bottom: 3rem;
 }
-
+/*------/ control the blue line under about section/------*/
 .title-left {
   font-size: 2rem;
   position: relative;
@@ -439,6 +439,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 1px;
   min-width: fit-content;
+  color:whitesmoke;
 }
 #header .logo a {
   color: #fff;
@@ -681,11 +682,13 @@ a:hover {
   width: 100%;
   opacity: 0.9;
 }
+
 .hero .hero-title {
   color: #fff;
-  font-weight: 600;
-  font-size: 3rem;
+  font-weight: 200;
+  font-size: 2rem;
   text-align: left;
+  font-family: "Arial";
 }
 @media (min-width: 768px) {
   .hero .hero-title {
@@ -694,8 +697,9 @@ a:hover {
 }
 .hero .hero-subtitle {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 200;
   text-align: left;
+  font-family: "Verdana";
 }
 @media (min-width: 768px) {
   .hero .hero-subtitle {
@@ -738,42 +742,32 @@ a:hover {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about-mf .box-shadow-full {
+.about-mf .box-shadow-full {/*To select color of the shadow */
+  background-color: rgb(219, 217, 217);
   padding-top: 4rem;
   padding-bottom: 4rem;
+  
 }
-.about-mf .about-img {
-  margin-bottom: 2rem;
+.about-mf .about-img {/*To select the box size*/
+  margin-bottom: 7rem;
+
 }
-.about-mf .about-img img {
-  margin-left: 10px;
+.about-mf .about-img img {/*To select the image location*/
+
 }
-@media (min-width: 767px) {
+@media (min-width: 1080px) {
   .about-mf .box-pl2 {
     margin-top: 3rem;
     padding-left: 0rem;
   }
 }
 
-.skill-mf span {
-  color: #4e4e4e;
-}
-.skill-mf .progress {
-  background-color: #cde1f8;
-  margin: 0.5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: 0.7rem;
-}
-.skill-mf .progress .progress-bar {
-  height: 0.7rem;
-  background-color: #0078ff;
-}
 
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .service-box {
-  background-color: #fff;
+  background-color: rgb(12, 1, 1);
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -781,9 +775,9 @@ a:hover {
 }
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
-  color: #fff;
+  color: rgb(8, 0, 0);
   background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
+  box-shadow: 0 0 0 10px #f3f4f5;
 }
 .service-box .service-ico {
   margin-bottom: 1rem;
