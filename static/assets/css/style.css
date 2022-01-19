@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   background-color: rgb(20, 20, 20);
-  color: #4e4e4e;
+  color: whitesmoke;
 }
 
 h1,
@@ -684,11 +684,10 @@ a:hover {
 }
 
 .hero .hero-title {
-  color: #fff;
-  font-weight: 200;
-  font-size: 2rem;
+  color: whitesmoke;
+  font-weight: 500;
   text-align: left;
-  font-family: "Arial";
+  font-size: 28px;
 }
 @media (min-width: 768px) {
   .hero .hero-title {
@@ -742,24 +741,162 @@ a:hover {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about-mf .box-shadow-full {/*To select color of the shadow */
-  background-color: rgb(219, 217, 217);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  
+.about-five {
+  background-color: var(--light-3);
+  padding-top: 120px;
+  padding-bottom: 90px;
 }
-.about-mf .about-img {/*To select the box size*/
-  margin-bottom: 7rem;
-
-}
-.about-mf .about-img img {/*To select the image location*/
-
-}
-@media (min-width: 1080px) {
-  .about-mf .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-five {
+    padding-top: 100px;
+    padding-bottom:70px;
   }
+}
+@media (max-width: 767px) {
+  .about-five {
+    padding-top: 80px;
+    padding-bottom:60px;
+  }
+}
+.about-five-content{
+  padding-left: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-five-content {
+    padding-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .about-five-content {
+    padding-left: 0;
+  }
+}
+
+.about-five-content .small-title {
+  position: relative;
+  color: whitesmoke;
+  padding-left: 0px;
+  font-size: 30pt;
+  
+
+}
+
+.about-five-content .small-title::before {
+  position: absolute;
+  color: whitesmoke;
+  content: "";
+  left: 0;
+  top: 50%;
+  background-color: blue;
+  height: 2px;
+  width: 20px;
+  margin-top: -1px;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease out;
+}
+.about-five-content .main-title {/*changing the color of the writing under about section*/
+  color: whitesmoke;
+  font-size: 13pt;
+  margin-top: 20px;
+}
+.about-five-content .about-five-tab {
+  margin-top: 40px;
+}
+.about-five-content .about-five-tab nav {/*changing the color of the box that highlighted the 3 main things*/
+  border: none;
+  background-color:whitesmoke;
+  padding: 15px;
+  border-radius: 5px;
+}
+.about-five-content .about-five-tab nav .nav-tabs {
+  border: none;
+}
+.about-five-content .about-five-tab nav button {
+  border: none;
+  color: whitesmoke;
+  font-weight: 600;
+  padding: 0;
+  margin-right: 20px;
+  position: relative;
+  background-color: black;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+@media (max-width: 767px) {
+  .about-five-content .about-five-tab nav button {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .about-five-content .about-five-tab nav button:last-child {
+    margin: 0;
+  }
+}
+.about-five-content .about-five-tab nav button:hover {/*changes the color when highlighted the three main sections*/
+  color: rgba(162, 238, 162, 0.753);
+}
+.about-five-content .about-five-tab nav button.active {/*changes the color of the box selected*/
+  background-color: rgba(162, 238, 162, 0.753);
+  color: rgb(133, 133, 133);
+}
+.about-five-content .about-five-tab nav button:last-child {
+  margin-right: 0;
+}
+.about-five-content .about-five-tab .tab-content {
+  border: none;
+  padding-top: 30px;
+}
+.about-five-content .about-five-tab .tab-content p {
+  margin-bottom: 20px;
+}
+.about-five-content .about-five-tab .tab-content p:last-child {
+  margin: 0;
+}
+
+.about-image-five {
+  padding-left: 60px;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-image-five {
+    margin-bottom: 70px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .about-image-five {
+    margin-bottom: 60px;
+    padding-left: 0;
+  }
+}
+.about-image-five .shape {
+  position: absolute;
+  left: 30px;
+  top: -30px;
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-image-five .shape {
+    left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-image-five::before {
+    right: -15px;
+    bottom: -15px;
+  }
+}
+@media (max-width: 767px) {
+  .about-image-five::before {
+    display: none;
+  }
+}
+.about-image-five img {
+  width: 100%;
+  z-index: 2;
 }
 
 
@@ -776,7 +913,7 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: rgb(8, 0, 0);
-  background-color: #0078ff;
+  background-color: whitesmoke;
   box-shadow: 0 0 0 10px #f3f4f5;
 }
 .service-box .service-ico {
