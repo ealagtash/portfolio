@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: whitesmoke;
 }
 
 a {
@@ -835,11 +835,11 @@ a:hover {
   }
 }
 .about-five-content .about-five-tab nav button:hover {/*changes the color when highlighted the three main sections*/
-  color: rgba(162, 238, 162, 0.753);
+  color: rgba(241, 67, 67, 0.753);
 }
 .about-five-content .about-five-tab nav button.active {/*changes the color of the box selected*/
-  background-color: rgba(162, 238, 162, 0.753);
-  color: rgb(133, 133, 133);
+  background-color: rgba(243, 16, 16, 0.753);
+  color: black;
 }
 .about-five-content .about-five-tab nav button:last-child {
   margin-right: 0;
@@ -904,7 +904,7 @@ a:hover {
 # Services
 --------------------------------------------------------------*/
 .service-box {
-  background-color: rgb(12, 1, 1);
+  background-color: whitesmoke;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -913,7 +913,7 @@ a:hover {
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: rgb(8, 0, 0);
-  background-color: whitesmoke;
+  background-color: rgba(243, 16, 16, 0.753);
   box-shadow: 0 0 0 10px #f3f4f5;
 }
 .service-box .service-ico {
@@ -935,6 +935,7 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   padding: 0.4rem 0;
+  color: black;
 }
 .service-box .s-description {
   color: #4e4e4e;
