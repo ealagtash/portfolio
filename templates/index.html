@@ -48,7 +48,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Skills</a></li>
-          <li><a class="nav-link scrollto " href="#work">Projects</a></li>
+          <li><a class="nav-link scrollto " href="#blog">Projects</a></li>
           <li><a class="nav-link scrollto " href="#blog">Resume</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -169,6 +169,7 @@
           <div class="col-lg-6 col-12">
             <div class="about-five-content">
               <h6 class="small-title text-lg">About Me</About></h6>
+              <div class="line-mf1"></div>
               <h2 class="main-title fw-bold">A 23 years old college student. I'm a passionate and a humble person who seeks challenges and enjoys the outdoors.</h2>
               <div class="about-five-tab">
                 <nav>
@@ -177,8 +178,6 @@
                       type="button" role="tab" aria-controls="nav-education" aria-selected="true">Education</button>
                     <button class="nav-link" id="nav-passion-tab" data-bs-toggle="tab" data-bs-target="#nav-passion"
                       type="button" role="tab" aria-controls="nav-passion" aria-selected="false">Passions</button>
-                   <!-- <button class="nav-link" id="nav-Optimism-tab" data-bs-toggle="tab" data-bs-target="#nav-Optimism"
-                      type="button" role="tab" aria-controls="nav-Optimism" aria-selected="false">Optimism</button>-->
                   </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
@@ -278,7 +277,7 @@
               <div class="service-content">
                 <h2 class="s-title">Software</h2>
                 <p class="s-description text-center">
-                  Solidworks, Fusion 360, Visual Studio, Eclipse, Xcode, Circuit Python, Microsoft Office Suite, Microsoft Teams, LabVIEW, MATLAB, Visual Studio Code
+                  Solidworks, Fusion 360, Visual Studio Code, Eclipse, Xcode, Circuit Python, Microsoft Office Suite, Microsoft Teams, LabVIEW, MATLAB, Visual Studio Code
                 </p>
               </div>
             </div>
@@ -332,55 +331,9 @@
       </div>-->
     </section><!-- End Services Section --><!-- End Portfolio Section -->
     <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+    
+    <!-- End Testimonials Section -->
 
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="{% static 'assets/img/testimonial-2.jpg'%}" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Xavi Alonso</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="{% static 'assets/img/testimonial-4.jpg'%}" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Marta Socrate</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
-          </div>
-        </div>
-      </div>
-    </div><!-- End Testimonials Section -->
 
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog-mf sect-pt4 route">
@@ -389,11 +342,9 @@
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a">
-                Blog
+                Projects
               </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
+              
               <div class="line-mf"></div>
             </div>
           </div>
@@ -402,94 +353,65 @@
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="blog-single.html"><img src="{% static 'assets/img/post-1.jpg'%}" alt="" class="img-fluid"></a>
+                <a href="static/pdfs/22C_ Pokemon.pdf" target="_blank"><img src="static/assets/img/pokemon-eevee-i32673.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
                   <div class="card-category">
-                    <h6 class="category">Travel</h6>
+                    <h6 class="category">Pokémon Library</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <h3 class="card-title"><a style="color:black;">About: </a></h3>
                 <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
+                  The program was designed to be a dictionary for Pokémons where you can sort, change, search, add, and delete from. We used binary search trees, hash tables, stacks, and queues
+                  and each function had a special task to preform and at the end we gave the user an option to save new changes that were made during the duration of the program.
+                  <a style="color:rgb(255, 2, 2);">For the presntation slides click on the image above.</a>  
                 </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="{% static 'assets/img/testimonial-2.jpg'%}g" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="blog-single.html"><img src="{% static 'assets/img/post-2.jpg'%}g" alt="" class="img-fluid"></a>
+                <a href="static/pdfs/AUTO-WINDOW presentation.pdf "target="_blank"><img src="static\assets\img\Team JEE.JPG" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
                   <div class="card-category">
-                    <h6 class="category">Web Design</h6>
+                    <h6 class="category">Automatic Window Opener</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <h3 class="card-title"><a style="color:black;">About: </a></h3>
                 <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
+                  We designed a window to open and close based on feedback from 3 diffent sensors. While I came up with the idea of having an Auto mode and a Manual mode 
+                  giving the user a complete control of their window. I've helped support with coding using circuit python and picked out the stepper motors and soldered all 
+                  the connetections at the same time I've helped with the design and picking out parts.    
+                  <a style="color:rgb(255, 2, 2);">For the presntation slides click on the image above.</a> 
                 </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="{% static 'assets/img/testimonial-2.jpg'%}" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+                <a href="static\pdfs\195A Final Report.pdf"target="_blank"><img src="static\assets\img\SJSU.JPG" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
                   <div class="card-category">
-                    <h6 class="category">Web Design</h6>
+                    <h6 class="category">Drag Reduction System (DRS)</h6>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                <h3 class="card-title"><a href="blog-single.html">About:</a></h3>
                 <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
+                  collaborating with Spartan Racing Team Formula SAE for my senior project we are designing a Drag Reduction System to optimize preformance on the track. 
+                  I've researched diffent type of actuation to best fit our application for the compustion & electric vehciles while keeping in mind the different obstacles we may 
+                  face such as weight, complicity, and voltage. While drag is needed in some parts of the race we wanted to fully automate the DRS to open and close based on feedback 
+                  from different sensors inclduing but not limited, the steering angle, throttle position, and brake pressure sensor. 
+
                 </p>
               </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="{% static 'assets/img/testimonial-2.jpg'%}" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

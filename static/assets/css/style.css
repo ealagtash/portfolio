@@ -164,7 +164,12 @@ a:hover {
   background-color: #0078ff;
   margin: 0 auto;
 }
-
+.line-mf1 {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin-left: 15mm;
+}
 /*--/ Title Left /--*/
 .title-box-2 {
   margin-bottom: 3rem;
@@ -805,7 +810,7 @@ a:hover {
 }
 .about-five-content .about-five-tab nav {/*changing the color of the box that highlighted the 3 main things*/
   border: none;
-  background-color:whitesmoke;
+  background-color:grey;
   padding: 15px;
   border-radius: 5px;
 }
