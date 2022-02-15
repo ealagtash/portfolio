@@ -1,12 +1,12 @@
 from django.db import models
 
-class pdf(models.Model):
-    title = models.CharField(max_length=100)
-    author = models.CharFields(max_length=100)
-    pdf = models.FileField(upload_to='books/pdfs/')
-
 def __str__(self):
     return self.title
 
-    
+class projects(models.Model):
+    name=models.CharField(max_length=100)
+    details = models.CharField(max_length=100)
+#class resume(models.Model):
+    #name=models.CharField(max_length=100)
+   # details = models.CharField(max_length=100)
 # Create your models here.
