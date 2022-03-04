@@ -6,11 +6,5 @@ def index(request):
 
     return render(request, 'index.html')
 
-def main(request):
-    return render(request,'template.html')
-
-def book_list(request):
-    return render(request, 'book_list.html')
-
-def upload_book(request):
-    return render(request, 'upload_book.html')
+def profile(request):
+    return render(request,'www.linkedin.com/in/ehsan-al-agtash-647368128/')

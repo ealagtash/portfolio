@@ -96,9 +96,7 @@ a:hover {
 }
 
 .overlay-mf {
-  position: absolute;
   top: 0;
-  left: 0px;
   padding: 0;
   height: 100%;
   width: 100%;
@@ -175,6 +173,13 @@ a:hover {
   margin-bottom: 3rem;
 }
 /*------/ control the blue line under about section/------*/
+.title-center {
+  
+  position: right;
+  margin: auto;
+  width: 10%;
+  padding: 10px;
+}
 .title-left {
   font-size: 2rem;
   position: relative;
@@ -921,10 +926,12 @@ a:hover {
   text-align: center;
 }
 .service-box:hover .ico-circle {
+  /*
   transition: all 500ms ease;
   color: rgb(8, 0, 0);
-  background-color: rgba(243, 16, 16, 0.753);
+  background-color: whitesmoke;
   box-shadow: 0 0 0 10px #f3f4f5;
+  */
 }
 .service-box .service-ico {
   margin-bottom: 1rem;
@@ -1275,6 +1282,13 @@ a:hover {
 .card-blog .card-title {
   font-size: 1.3rem;
   margin-top: 0.6rem;
+}
+.card-blog .card-wee{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  
 }
 .card-blog .card-description {
   color: #4e4e4e;
