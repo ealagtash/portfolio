@@ -170,22 +170,16 @@ a:hover {
 }
 /*--/ Title Left /--*/
 .title-box-2 {
+  position: relative;
   margin-bottom: 3rem;
 }
 /*------/ control the blue line under about section/------*/
-.title-center {
-  
-  position: right;
-  margin: auto;
-  width: 10%;
-  padding: 10px;
-}
 .title-left {
-  font-size: 2rem;
-  position: relative;
+  font-size: 3rem;
+  position:inherit;
   display: flex;
-  justify-content: right;
-  align-items: right;
+  justify-content: center;
+  align-items: center;
 }
 .title-left:before {
   content: "";
