@@ -4,7 +4,8 @@ services:
   nginx:
     build: ./nginx
     ports:
-      - 1300:80
+      - 80:80
+      - 443:443
     volumes:
       - static_volume:/home/app/microservice/static
     depends_on:
@@ -15,28 +16,13 @@ services:
     command: sh -c "
       python3 manage.py migrate &&
       python3 manage.py collectstatic --noinput &&
-      gunicorn portfolio.wsgi:application --bind 0.0.0.0:${APP_PORT}"
+      gunicorn Ehsan.wsgi:application --bind 0.0.0.0:8000"
     volumes:
-      - .:/microservice:rw # map data and files from parent directory in host to microservice directory in docker containe
+      - .:/microservice:rw # map data and files from parent directory in host to microservice directory in docker container
       - static_volume:/home/app/microservice/static
-    env_file:
-      - .env
-    image: ealagtash/portfolio
-    expose:
-      - ${APP_PORT}
-    restart: "on-failure"
-    depends_on:
-      - db
-  db:
-    image: postgres:11-alpine
-    volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-      - postgres_data:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-      - POSTGRES_DB=${DB_NAME}
-      - PGPORT=${DB_PORT}
-      - POSTGRES_USER=${POSTGRES_USER}
+      ALLOWED_HOSTS: "localhost 127.0.0.1 0.0.0.0 [::1]"
+    image: ealagtash/portfolio
     restart: "on-failure"
 
 
