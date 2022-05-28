@@ -20,6 +20,7 @@ services:
       "
     volumes:
       - .:/home/app
+      - static_volume:/home/app/generated-statics
     ports:
       - 8000:8000
     image: ealagtash/portfolio
