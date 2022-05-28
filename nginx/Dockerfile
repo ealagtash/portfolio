@@ -1,7 +1,5 @@
 FROM nginx:1.21.6
 
-WORKDIR /home/app
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-RUN rm /etc/nginx/conf.d/default.conf
-
-COPY nginx.conf /etc/nginx/conf.d/
+COPY generated-statics/ /usr/share/nginx/html
