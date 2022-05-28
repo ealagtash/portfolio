@@ -7,21 +7,19 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - static_volume:/home/app/microservice/static
+      - static_volume:/home/app/static
     depends_on:
       - web
     restart: "on-failure"
   web:
     build: .
     command: sh -c "
-      python3 manage.py migrate &&
-      python3 manage.py collectstatic --noinput &&
-      gunicorn Ehsan.wsgi:application --bind 0.0.0.0:8000"
+      python3 manage.py collectstatic --noinput
+      "
     volumes:
-      - .:/microservice:rw # map data and files from parent directory in host to microservice directory in docker container
-      - static_volume:/home/app/microservice/static
-    environment:
-      ALLOWED_HOSTS: "localhost 127.0.0.1 0.0.0.0 [::1]"
+      - .:/home/app
+    ports:
+      - 8000:8000
     image: ealagtash/portfolio
     restart: "on-failure"
 
