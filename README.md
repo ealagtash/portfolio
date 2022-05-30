@@ -17,4 +17,9 @@ To set up your local workspace:
 -------------------------
 
 ## Or just run:
+
 `docker compose up --build`
+
+---
+https://pentacent.medium.com/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71
+https://dzone.com/articles/nginx-and-https-with-lets-encrypt-certbot-and-cron
