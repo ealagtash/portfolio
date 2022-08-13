@@ -1,4 +1,6 @@
 version: '3.7'
+- name: GitHub Action for DigitalOcean - doctl
+  uses: digitalocean/action-doctl@v2.1.1
 
 services:
   nginx:
