@@ -22,7 +22,7 @@ services:
       - .:/home/app
       - static_volume:/home/app/generated-statics
     ports:
-      - 8000:8000
+      - 8000:8000x
     image: ealagtash/portfolio
     restart: "on-failure"
   name: GitHub Action for DigitalOcean - doctl
