@@ -19,6 +19,7 @@ install: .venv/.python-version .venv/requirements.txt
 	@echo
 	@echo "Finished installing requirements."
 
+# RUN ONLY ONCE
 install-pyenv:
 	brew update
 	brew install pyenv
