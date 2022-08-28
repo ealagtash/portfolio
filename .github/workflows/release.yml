@@ -1,12 +1,23 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Release and Tag
+name: Release
 
 on: 
   push:
     branches:
       - master
-
+  workflow_dispatch:
+    inputs:
+      bump:
+        description: 'Which version number should be increased by one?'
+        required: true
+        type: choice
+        options:
+        - major
+        - minor
+        - patch
+        
+        
 jobs:
   release-on-push:
     runs-on: ubuntu-latest
@@ -15,4 +26,4 @@ jobs:
     steps:
       - uses: rymndhng/release-on-push-action@master
         with:
-          bump_version_scheme: minor
+          bump_version_scheme: $BUMP
