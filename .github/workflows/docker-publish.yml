@@ -109,6 +109,6 @@ jobs:
                       "registry_type": "DOCKER_HUB",
                       "registry": "ealagtash",
                       "repository": "portfolio",
-                      "tag": "${{ needs.build.outputs.imageTag }}"
+                      "tag": "master"
                     }
                   ]'
