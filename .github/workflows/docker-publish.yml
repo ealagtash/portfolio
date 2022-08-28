@@ -8,9 +8,9 @@ name: Docker
 on:
   # run when a new tag is pushed
   push:
-    tags: [ 'v*.*.*' ]
-  pull_request:
-    branches: [ "master" ]
+    # Pattern matched against refs/tags
+    tags:        
+      - '*'  
 
 env:
   # Use docker.io for Docker Hub if empty
