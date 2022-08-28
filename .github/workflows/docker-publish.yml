@@ -106,9 +106,10 @@ jobs:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
           images: '[{
                       "name": "portfolio-server",
-                      "registry_type": "DOCKER_HUB",
-                      "registry": "ealagtash",
-                      "repository": "portfolio",
-                      "tag": "master"
-                    }
-                  ]'
+                      "image":{ 
+                        "registry_type": "DOCKER_HUB",
+                        "registry": "ealagtash",
+                        "repository": "portfolio",
+                        "tag": "master"
+                      },
+                    }]'
