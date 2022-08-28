@@ -18,13 +18,17 @@ on:
         - minor
         - patch
         
-        
 jobs:
   release-on-push:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: rymndhng/release-on-push-action@master
+      - if: "${{ inputs.bump != '' }}"
+        uses: rymndhng/release-on-push-action@master
         with:
           bump_version_scheme: ${{ inputs.bump }}
+      - if: "${{ inputs.bump == '' }}"
+        uses: rymndhng/release-on-push-action@master
+        with:
+          bump_version_scheme: minor
