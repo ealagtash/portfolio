@@ -49,6 +49,18 @@ jobs:
       id-token: write
 
     steps:
+      - name: Get smart tag
+        id: prepare
+        uses: Surgo/docker-smart-tag-action@v1
+        with:
+          docker_image: name/app
+
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ${{ steps.prepare.outputs.tag }}
+
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -59,7 +71,6 @@ jobs:
         uses: sigstore/cosign-installer@7e0881f8fe90b25e305bbf0309761e9314607e25
         with:
           cosign-release: 'v1.9.0'
-
 
       # Workaround: https://github.com/docker/build-push-action/issues/461
       - name: Setup Docker buildx
@@ -91,7 +102,7 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.prepare.outputs.tag }}
           labels: ${{ steps.meta.outputs.labels }}
 
       # Sign the resulting Docker image digest except on PRs.
