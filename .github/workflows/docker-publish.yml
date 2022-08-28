@@ -6,9 +6,8 @@ name: Docker
 # documentation.
 
 on:
+  # run when a new tag is pushed
   push:
-    branches: [ "master" ]
-    # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
   pull_request:
     branches: [ "master" ]
