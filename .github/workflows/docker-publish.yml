@@ -6,11 +6,10 @@ name: Docker
 # documentation.
 
 on:
-  # run when a new tag is pushed
-  push:
-    # Pattern matched against refs/tags
-    tags:        
-      - '*'  
+  workflow_run:
+    workflows: ["Release"]
+    types:
+      - completed
 
 env:
   # Use docker.io for Docker Hub if empty
