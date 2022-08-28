@@ -18,3 +18,10 @@ install: .venv/.python-version .venv/requirements.txt
 	$(PIP) freeze > requirements-freeze.txt
 	@echo
 	@echo "Finished installing requirements."
+
+install-pyenv:
+	brew update
+	brew install pyenv
+	echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+	echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+	echo 'eval "$(pyenv init -)"' >> ~/.zshrc
