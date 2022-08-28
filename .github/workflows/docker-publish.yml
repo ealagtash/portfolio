@@ -94,6 +94,7 @@ jobs:
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }}
 
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: DigitalOcean App Platform deployment
@@ -104,6 +105,6 @@ jobs:
           images: '[{
                       "name": "ealagtash-portfolio",
                       "repository": "ealagtash/portfolio",
-                      "tag": "${{ jobs.build.steps.meta.outputs.tags }}"
+                      "tag": "${{ needs.build.steps.meta.outputs.tags }}"
                     }
                   ]'
