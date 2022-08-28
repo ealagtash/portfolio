@@ -1,17 +1,9 @@
-name: Docker
-
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+name: Docker-Publish
 
 on:
   push:
-    branches: [ "master" ]
     # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
-  pull_request:
-    branches: [ "master" ]
 
 env:
   # Use docker.io for Docker Hub if empty
@@ -95,7 +87,7 @@ jobs:
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }}
 
     outputs:
-      imageTag: ${{ steps.meta.outputs.tags }}
+      imageTag: ${{ steps.meta.outputs.version }}
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -112,7 +104,7 @@ jobs:
                             "registry_type": "DOCKER_HUB",
                             "registry": "ealagtash",
                             "repository": "portfolio",
-                            "tag": "master"
+                            "tag": "${{ needs.build.outputs.imageTag }}"
                           }
                         }
                       ]'
