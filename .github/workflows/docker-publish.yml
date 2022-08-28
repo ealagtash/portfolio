@@ -93,6 +93,8 @@ jobs:
         # against the sigstore community Fulcio instance.
         run: echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign {}@${{ steps.build-and-push.outputs.digest }}
 
+    outputs:
+      imageTag: ${{ steps.meta.outputs.tags }}
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -103,8 +105,10 @@ jobs:
           app_name: ealagtash-portfolio
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
           images: '[{
-                      "name": "ealagtash-portfolio",
-                      "repository": "ealagtash/portfolio",
-                      "tag": "${{ needs.build.steps.meta.outputs.tags }}"
+                      "name": "portfolio-server",
+                      "registry_type": "DOCKER_HUB"
+                      "registry": "ealagtash"
+                      "repository": "portfolio"
+                      "tag": "${{ needs.build.outputs.imageTag }}"
                     }
                   ]'
