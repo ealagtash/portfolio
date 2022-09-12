@@ -1,16 +1,7 @@
-/**
-* Template Name: DevFolio - v4.7.1
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
-  background-color: rgb(20, 20, 20);
-  color: whitesmoke;
+  background-color: rgb(0, 0, 0); /*-- controls the backgorinf color of the web page /--*/
+  color: white;/*-- controls the font color for some texts in the web /--*/
 }
 
 h1,
@@ -19,11 +10,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: whitesmoke;
+  color: rgba(255, 222, 151, 0.801);
 }
 
 a {
-  color: #1e1e1e;
+  color: rgba(255, 222, 151, 0.801);/*--controls the color of the page topics /--*/
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -159,13 +150,13 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: white;/*controls the solid line under the titles*/
   margin: 0 auto;
 }
 .line-mf1 {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: white;
   margin-left: 15mm;
 }
 /*--/ Title Left /--*/
@@ -185,7 +176,7 @@ a:hover {
   content: "";
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: rgba(255, 222, 151, 0.801);
   width: 100px;
   bottom: -12px;
 
@@ -224,11 +215,11 @@ a:hover {
   border-radius: 50%;
   line-height: 1.6;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
+  box-shadow: 0 0 0 3px rgba(255, 222, 151, 0.801);
   transition: all 500ms ease;
 }
 .socials .ico-circle:hover {
-  background-color: #0078ff;
+  background-color: rgba(255, 222, 151, 0.801);
   color: #fff;
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
@@ -246,11 +237,11 @@ a:hover {
   line-height: 2;
 }
 .list-ico span {
-  color: #0078ff;
+  color: rgba(255, 222, 151, 0.801);
   margin-right: 10px;
 }
 
-/*------/ Ico Circle /------*/
+/*------/ skills Circle /------*/
 .ico-circle {
   height: 100px;
   width: 100px;
@@ -259,11 +250,11 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
+  box-shadow: 0 0 0 10px white;/*controls the color of the circle*/
   display: block;
 }
 
-/*------/ Owl Carousel /------*/
+
 .owl-theme .owl-dots {
   text-align: center;
   margin-top: 18px;
@@ -289,7 +280,7 @@ a:hover {
   width: 25px;
 }
 
-/*--/ Scrolltop s /--*/
+/*--/ Scroll to the top /--*/
 .scrolltop-mf {
   position: relative;
   display: none;
@@ -323,7 +314,7 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: whitesmoke;
+  background: rgba(255, 222, 151, 0.801);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -331,12 +322,12 @@ a:hover {
 }
 .back-to-top i {
   font-size: 28px;
-  color: black;
+  color: rgb(0, 0, 0);
   line-height: 0;
 }
 .back-to-top:hover {
-  background: rgb(31, 77, 74);
-  color: red;
+  background: white;
+  color: white;
 }
 .back-to-top.active {
   visibility: visible;
@@ -405,14 +396,14 @@ a:hover {
   outline: 0;
 }
 .button:hover {
-  background-color: #0062d3;
+  background-color: red;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .button-a {
   text-decoration: none;
-  background-color: #0078ff;
+  background-color: red;
   color: #fff;
   border-color: #cde1f8;
 }
@@ -448,10 +439,10 @@ a:hover {
   font-weight: 600;
   letter-spacing: 1px;
   min-width: fit-content;
-  color:whitesmoke;
+  color:rgba(255, 222, 151, 0.801);
 }
 #header .logo a {
-  color: #fff;
+  color: rgba(255, 222, 151, 0.801);
 }
 #header .logo img {
   max-height: 40px;
@@ -488,7 +479,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
+  color: rgba(255, 222, 151, 0.801);
   font-size: 16px;
   font-weight: 600;
   padding: 0;
@@ -511,7 +502,7 @@ a:hover {
   bottom: -6px;
   left: 0;
   width: 0;
-  background-color: #fff;
+  background-color: rgba(255, 222, 151, 0.801);
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -520,7 +511,7 @@ a:hover {
   width: 80%;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #fff;
+  color: white;
 }
 .navbar .dropdown ul {
   display: block;
@@ -540,7 +531,7 @@ a:hover {
   min-width: 200px;
 }
 .navbar .dropdown ul a {
-  padding: 10px 20px;
+  padding: 10px 20px; 
   font-size: 14px;
   text-transform: none;
   color: #4e4e4e;
@@ -549,7 +540,7 @@ a:hover {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #0078ff;
+  color: rgba(255, 222, 151, 0.801);
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -675,7 +666,7 @@ a:hover {
 .hero {
   height: 100vh;
   position: relative;
-  color: #fff;
+  color: white;
 }
 .hero .hero-content {
   text-align: center;
@@ -693,7 +684,7 @@ a:hover {
 }
 
 .hero .hero-title {
-  color: whitesmoke;
+  color:white;
   font-weight: 500;
   text-align: left;
   font-size: 28px;
@@ -735,7 +726,7 @@ a:hover {
 }
 .hero-single .breadcrumb {
   background-color: transparent;
-  color: #0078ff;
+  color: rgba(255, 222, 151, 0.801);
 }
 .hero-single .breadcrumb .breadcrumb-item:before {
   color: #cde1f8;
@@ -783,7 +774,7 @@ a:hover {
 
 .about-five-content .small-title {
   position: relative;
-  color: whitesmoke;
+  color: rgba(255, 222, 151, 0.801);
   padding-left: 0px;
   font-size: 30pt;
   
@@ -792,11 +783,11 @@ a:hover {
 
 .about-five-content .small-title::before {
   position: absolute;
-  color: whitesmoke;
+  color: rgba(255, 222, 151, 0.801);
   content: "";
   left: 0;
   top: 50%;
-  background-color: blue;
+  background-color: rgba(255, 222, 151, 0.801);
   height: 2px;
   width: 20px;
   margin-top: -1px;
@@ -805,7 +796,7 @@ a:hover {
   transition: transform 0.25s ease out;
 }
 .about-five-content .main-title {/*changing the color of the writing under about section*/
-  color: whitesmoke;
+  color: white;
   font-size: 13pt;
   margin-top: 20px;
 }
@@ -814,9 +805,9 @@ a:hover {
 }
 .about-five-content .about-five-tab nav {/*changing the color of the box that highlighted the 3 main things*/
   border: none;
-  background-color:rgb(20, 20, 20);
+  background-color:rgba(255, 222, 151, 0.801);
   padding: 15px;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 .about-five-content .about-five-tab nav .nav-tabs {
   border: none;
@@ -828,9 +819,9 @@ a:hover {
   padding: 0;
   margin-right: 20px;
   position: relative;
-  background-color: whitesmoke;
+  background-color: white;
   padding: 10px 18px;
-  border-radius: 4px;
+  border-radius: 60px;
   text-transform: capitalize;
 }
 @media (max-width: 767px) {
@@ -844,10 +835,10 @@ a:hover {
   }
 }
 .about-five-content .about-five-tab nav button:hover {/*changes the color when highlighted the three main sections*/
-  color: #0078ff;
+  color: rgba(255, 222, 151, 0.801);
 }
 .about-five-content .about-five-tab nav button.active {/*changes the color of the box selected*/
-  background-color: #0078ff;
+  background-color: white;
   color: black;
 }
 .about-five-content .about-five-tab nav button:last-child {
@@ -910,22 +901,23 @@ a:hover {
 
 
 /*--------------------------------------------------------------
-# Services
+# skills 
 --------------------------------------------------------------*/
 .service-box {
-  background-color: whitesmoke;
-  padding: 2.5rem 1.3rem;
+  background-color: rgba(255, 222, 151, 0.801);
+  padding: 2rem 2rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
   text-align: center;
 }
+/*think about the blow if you wanna keep it*/
 .service-box:hover .ico-circle {
-  /*
+  
   transition: all 500ms ease;
   color: rgb(8, 0, 0);
-  background-color: whitesmoke;
+  background-color: white;
   box-shadow: 0 0 0 10px #f3f4f5;
-  */
+  
 }
 .service-box .service-ico {
   margin-bottom: 1rem;
@@ -946,14 +938,14 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   padding: 0.4rem 0;
-  color: black;
+  color: white;
 }
 .service-box .s-description {
-  color: #4e4e4e;
+  color: white;
 }
 
 /*--------------------------------------------------------------
-# Counter
+# Projects
 --------------------------------------------------------------*/
 .counter-box {
   color: #fff;
@@ -1009,15 +1001,15 @@ a:hover {
   font-size: 0.8rem;
 }
 .work-content .w-more .w-ctegory {
-  color: #0078ff;
+  color: rgba(255, 222, 151, 0.801);
 }
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #0078ff;
+  color: rgba(255, 222, 151, 0.801);
   float: right;
 }
 .work-content .w-like a {
-  color: #0078ff;
+  color: rgba(255, 222, 151, 0.801);
 }
 .work-content .w-like .num-like {
   font-size: 0.7rem;
@@ -1200,7 +1192,7 @@ a:hover {
   font-size: 14px;
 }
 .php-email-form input:focus, .php-email-form textarea:focus {
-  border-color: #0078ff;
+  border-color: rgba(255, 222, 151, 0.801);
 }
 .php-email-form input {
   padding: 10px 15px;
@@ -1259,11 +1251,11 @@ a:hover {
 }
 .card-blog .card-category {
   display: inline-block;
-  color: #fff;
+  color: white;
   padding: 0 15px 5px;
   overflow: hidden;
-  background-color: #0078ff;
-  border-radius: 4px;
+  background-color: rgba(255, 222, 151, 0.801);/*controls the little box under each file*/
+  border-radius: 10px;
 }
 .card-blog .card-category .category {
   color: #fff;
@@ -1435,7 +1427,7 @@ a:hover {
 --------------------------------------------------------------*/
 footer {
   text-align: center;
-  color: whitesmoke;
+  color: white;
   padding: 25px 0;
   background: Black;
 }
