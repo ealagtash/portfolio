@@ -1,7 +1,7 @@
 
 body {
-  background-color: rgb(0, 0, 0); /*-- controls the backgorinf color of the web page /--*/
-  color: white;/*-- controls the font color for some texts in the web /--*/
+  background-color: rgb(230, 230, 230); /*-- controls the backgorinf color of the web page /--*/
+  color: black;/*-- controls the font color for some texts in the web /--*/
 }
 
 h1,
@@ -10,11 +10,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgba(255, 222, 151, 0.801);
+  color: rgba(5, 5, 5, 0.801);
 }
 
 a {
-  color: rgba(255, 222, 151, 0.801);/*--controls the color of the page topics /--*/
+  color: rgba(230, 0, 0, 0.801);/*--controls the color of the page topics /--*/
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -48,7 +48,7 @@ a:hover {
 
 .box-shadow-a, .button:hover {
   text-decoration: none;
-  box-shadow: 0 0 0 4px #cde1f8;
+  box-shadow: 0 0 0 4px #1479ec;
 }
 
 .display-5 {
@@ -150,13 +150,13 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: white;/*controls the solid line under the titles*/
+  background-color: rgb(0, 0, 0);/*controls the solid line under the titles*/
   margin: 0 auto;
 }
 .line-mf1 {
   width: 40px;
   height: 5px;
-  background-color: white;
+  background-color: black;/* changes the color for the about underline section*/
   margin-left: 15mm;
 }
 /*--/ Title Left /--*/
@@ -176,7 +176,7 @@ a:hover {
   content: "";
   position: absolute;
   height: 3px;
-  background-color: rgba(255, 222, 151, 0.801);
+  background-color: rgb(5, 5, 5);
   width: 100px;
   bottom: -12px;
 
@@ -208,21 +208,23 @@ a:hover {
 .socials ul li {
   display: inline-block;
 }
+
+/* controlls the height and width of the circle and the icons*/
 .socials .ico-circle {
   height: 40px;
   width: 40px;
   font-size: 1.2rem;
   border-radius: 50%;
-  line-height: 1.6;
-  margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px rgba(255, 222, 151, 0.801);
-  transition: all 500ms ease;
+  line-height: 2;
+  margin: 0 10px 0 0;
+  box-shadow: 0 0 0 3px rgba(3, 2, 0, 0.801);
+  transition: all 900ms ease;
 }
 .socials .ico-circle:hover {
-  background-color: rgba(255, 222, 151, 0.801);
-  color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
-  transition: all 500ms ease;
+  background-color: rgba(5, 4, 0, 0.801);
+  color: rgb(223, 0, 0);
+  box-shadow: 0 0 0 3px #fffefe;
+  transition: all 1000ms ease;
 }
 
 /*------/ Ul resect /------*/
@@ -237,7 +239,7 @@ a:hover {
   line-height: 2;
 }
 .list-ico span {
-  color: rgba(255, 222, 151, 0.801);
+  color: rgba(0, 0, 0, 0.801); /* location icon color change*/
   margin-right: 10px;
 }
 
@@ -250,7 +252,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px white;/*controls the color of the circle*/
+  box-shadow: 0 0 0 10px rgb(0, 0, 0);/*controls the color of the circle*/
   display: block;
 }
 
@@ -314,7 +316,7 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: rgba(255, 222, 151, 0.801);
+  background: rgb(255, 255, 255);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -326,8 +328,10 @@ a:hover {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: white;
-  color: white;
+  background: rgb(255, 255, 255);
+  font-size: 15px;
+  transition: transform .5s ease;
+  transform: scale(1.5);
 }
 .back-to-top.active {
   visibility: visible;
@@ -439,16 +443,16 @@ a:hover {
   font-weight: 600;
   letter-spacing: 1px;
   min-width: fit-content;
-  color:rgba(255, 222, 151, 0.801);
+  color:white;/* name left corner color change*/
 }
 #header .logo a {
-  color: rgba(255, 222, 151, 0.801);
+  color: rgba(2, 2, 2, 0.801);
 }
 #header .logo img {
   max-height: 40px;
 }
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: black;
   padding: 12px 0;
 }
 
@@ -479,7 +483,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(255, 222, 151, 0.801);
+  color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 600;
   padding: 0;
@@ -502,7 +506,7 @@ a:hover {
   bottom: -6px;
   left: 0;
   width: 0;
-  background-color: rgba(255, 222, 151, 0.801);
+  background-color: rgb(255, 255, 255);
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -511,7 +515,10 @@ a:hover {
   width: 80%;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: white;
+  font-size: 15px;
+  transition: transform 1s ease;
+  transform: scale(1.5);
+  color: rgba(177, 177, 177, 0.87);
 }
 .navbar .dropdown ul {
   display: block;
@@ -540,7 +547,7 @@ a:hover {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: rgba(255, 222, 151, 0.801);
+  color: rgba(235, 3, 3, 0.801);
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -726,7 +733,7 @@ a:hover {
 }
 .hero-single .breadcrumb {
   background-color: transparent;
-  color: rgba(255, 222, 151, 0.801);
+  color: rgba(255, 151, 151, 0.801);
 }
 .hero-single .breadcrumb .breadcrumb-item:before {
   color: #cde1f8;
@@ -774,7 +781,7 @@ a:hover {
 
 .about-five-content .small-title {
   position: relative;
-  color: rgba(255, 222, 151, 0.801);
+  color: rgba(8, 8, 8, 0.801);
   padding-left: 0px;
   font-size: 30pt;
   
@@ -783,11 +790,11 @@ a:hover {
 
 .about-five-content .small-title::before {
   position: absolute;
-  color: rgba(255, 222, 151, 0.801);
+  color: rgba(3, 3, 3, 0.801);
   content: "";
   left: 0;
   top: 50%;
-  background-color: rgba(255, 222, 151, 0.801);
+  background-color: rgba(0, 0, 0, 0.801);
   height: 2px;
   width: 20px;
   margin-top: -1px;
@@ -796,7 +803,7 @@ a:hover {
   transition: transform 0.25s ease out;
 }
 .about-five-content .main-title {/*changing the color of the writing under about section*/
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 13pt;
   margin-top: 20px;
 }
@@ -805,7 +812,7 @@ a:hover {
 }
 .about-five-content .about-five-tab nav {/*changing the color of the box that highlighted the 3 main things*/
   border: none;
-  background-color:rgba(255, 222, 151, 0.801);
+  background-color:rgba(0, 0, 0, 0.801);
   padding: 15px;
   border-radius: 20px;
 }
@@ -835,11 +842,15 @@ a:hover {
   }
 }
 .about-five-content .about-five-tab nav button:hover {/*changes the color when highlighted the three main sections*/
-  color: rgba(255, 222, 151, 0.801);
+  font-size: 15px;
+  transition: transform 1s ease;
+  transform: scale(1.2);
+  color: rgba(184, 184, 184, 0.801);
 }
 .about-five-content .about-five-tab nav button.active {/*changes the color of the box selected*/
-  background-color: white;
-  color: black;
+  
+  background-color: rgb(7, 7, 7);
+  color: rgb(247, 244, 244);
 }
 .about-five-content .about-five-tab nav button:last-child {
   margin-right: 0;
@@ -904,7 +915,7 @@ a:hover {
 # skills 
 --------------------------------------------------------------*/
 .service-box {
-  background-color: rgba(255, 222, 151, 0.801);
+  background-color: rgba(7, 5, 0, 0.801);
   padding: 2rem 2rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
@@ -912,16 +923,17 @@ a:hover {
 }
 /*think about the blow if you wanna keep it*/
 .service-box:hover .ico-circle {
-  
-  transition: all 500ms ease;
-  color: rgb(8, 0, 0);
-  background-color: white;
+  font-size: 15px;
+  transition: transform 1s ease;
+  transform: scale(1.2); 
+  color: rgb(255, 255, 255);
+  background-color: rgb(10, 1, 1);
   box-shadow: 0 0 0 10px #f3f4f5;
   
 }
 .service-box .service-ico {
   margin-bottom: 1rem;
-  color: #1e1e1e;
+  color: #ffffff;
 }
 .service-box .ico-circle {
   transition: all 500ms ease;
@@ -948,12 +960,14 @@ a:hover {
 # Projects
 --------------------------------------------------------------*/
 .counter-box {
-  color: #fff;
+  color:#fff;
   text-align: center;
+  
 }
 @media (min-width: 577px) {
   .counter-box {
     margin-bottom: 1.8rem;
+    
   }
 }
 
@@ -997,19 +1011,19 @@ a:hover {
   padding: 2rem 3% 1rem 4%;
 }
 .work-content .w-more {
-  color: #4e4e4e;
+  color: #525151;
   font-size: 0.8rem;
 }
 .work-content .w-more .w-ctegory {
-  color: rgba(255, 222, 151, 0.801);
+  color: rgba(0, 0, 0, 0.801);
 }
 .work-content .w-like {
   font-size: 2.5rem;
-  color: rgba(255, 222, 151, 0.801);
+  color: rgba(12, 12, 12, 0.801);
   float: right;
 }
 .work-content .w-like a {
-  color: rgba(255, 222, 151, 0.801);
+  color: rgba(3, 3, 3, 0.801);
 }
 .work-content .w-like .num-like {
   font-size: 0.7rem;
@@ -1192,7 +1206,7 @@ a:hover {
   font-size: 14px;
 }
 .php-email-form input:focus, .php-email-form textarea:focus {
-  border-color: rgba(255, 222, 151, 0.801);
+  border-color: rgba(0, 0, 0, 0.801);
 }
 .php-email-form input {
   padding: 10px 15px;
@@ -1240,6 +1254,16 @@ a:hover {
 .card-blog .card-body {
   position: relative;
 }
+/* To hover over over box makes it pop out
+.card-blog:hover .card-category {
+  font-size: 15px;
+  transition: transform 1s ease;
+  transform: scale(1.2); 
+  color: rgb(255, 255, 255);
+  background-color: rgb(10, 1, 1);
+  box-shadow: 0 0 0 10px #f3f4f5;
+}
+ */
 .card-blog .card-category-box {
   position: absolute;
   text-align: center;
@@ -1251,10 +1275,10 @@ a:hover {
 }
 .card-blog .card-category {
   display: inline-block;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0 15px 5px;
   overflow: hidden;
-  background-color: rgba(255, 222, 151, 0.801);/*controls the little box under each file*/
+  background-color: rgb(0, 0, 0);/*controls the little box under each file*/
   border-radius: 10px;
 }
 .card-blog .card-category .category {
@@ -1272,20 +1296,29 @@ a:hover {
 .card-blog .card-wee{
   margin: auto;
   width: 50%;
-  border: 3px solid green;
+  border: 3px solid rgb(0, 0, 0);
   padding: 10px;
+  
+}
+
+.card-blog .buttonsd:hover{
+  font-size: 15px;
+  
   
 }
 .card-blog .card-description {
   color: #4e4e4e;
+  
 }
 .card-blog .post-author {
   display: inline-block;
+  
 }
 .card-blog .post-date {
   color: #4e4e4e;
   display: inline-block;
   float: right;
+  
 }
 
 /*--------------------------------------------------------------
