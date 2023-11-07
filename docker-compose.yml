@@ -7,6 +7,4 @@ services:
     ports:
       - 80:80
     restart: "on-failure"
-name: cosign-installer
-uses: sigstore/cosign-installer@v3.1.2
             
