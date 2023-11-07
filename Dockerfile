@@ -29,3 +29,4 @@ EXPOSE 80
 
 RUN chmod +x run.sh
 CMD ["/bin/bash", "run.sh"]
+            
